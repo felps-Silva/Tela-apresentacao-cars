@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Poppins:wght@400;500;600;700;900&display=swap');
+
+body {
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.background {
+    background-image: url(/img/background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: 30px;
+    padding-top: 1rem;
+}
+
+.logo i{
+    width: 40px;
+    height: 40px;
+    color: rgb(251, 255, 2);
+    display: inline-flex;
+    cursor: pointer;
+    background: transparent;
+    font-size: 0.813rem;
+    border-radius: 2px;
+    border: 1px solid rgb(251, 255, 2);
+    align-items: center;
+    justify-content: center;
+}
+
+.logo i:hover{
+    color: #fff;
+    transition: 0.3s all;
+    
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(251, 255, 2);
+    margin: 8px;
+}
+
+.cabecalho {
+    color: #ffff;
+    padding: 20px;
+    display: flex;
+    gap: 3rem;
+    font-size: 0.813rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: #ffff;
+    width: 100px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.cabecalho a:hover{
+    background-color: rgb(251, 255, 2);
+    border-radius: 10px;
+    color: black;
+    transition: 0.3s all;
+    height: 1rem;
+}
+
+.models {
+    cursor: pointer;
+    border: 2px;
+    border-radius: 2px solid black;
+}
+
+.text {
+    padding: 150px 0 0 130px;
+}
+
+.text h3 {
+    color: #fff;
+    font-size: 0.813rem;
+}
+
+.text h1 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.text span {
+    color: rgb(251, 255, 2);
+    font-size: 30px;
+    
+}
+
+.text p {
+    color: #fff;
+}
+
+.redes-sociais a{
+    color: rgb(251, 255, 2);
+    padding: 10px;
+    margin-top: 5px;
+    justify-content: center;
+    
+}
+
+.redes-sociais :hover {
+    animation-name: hover-pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @keyframes hover-pulse {
+        25% {
+          transform: scale(1.1);
+        }
+        75% {
+          transform: scale(0.9);
+        }
+    }
+}
+
+button {
+    color: rgb(251, 255, 2);
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: transparent;
+    border: none;
+    animation-name: hover-pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes hover-pulse {
+    25% {
+      transform: scale(1.1);
+    }
+    75% {
+      transform: scale(0.9);
+    }
+}
+
+@media(min-width: 574px){
+    .mobile-menu div {
+        display: none;
+    }
+}
+
+@media(max-width: 575px) {
+    .mobile-menu div {
+        border: 2px auto;
+    }
+
+    .cabecalho {
+        display: none;
+    }
+}
+
+@media(max-width: 546px) {
+    .text {
+        font-size: 90%;
+    }
+
+    
+}
+
+@media(max-width: 505px) {
+    .text {
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 465px) {
+    .text {
+        font-size: 70%;
+    }
+}
+
+@media(max-width: 425px) {
+    .text {
+        font-size: 60%;
+    }
+}
+
+@media(max-width: 385px) {
+    .text {
+        font-size: 50%;
+    }
+
+    @media(max-width: 298px) {
+        .text {
+            font-size: 50%;
+        }
+
+        
+
+    }
+}
+
